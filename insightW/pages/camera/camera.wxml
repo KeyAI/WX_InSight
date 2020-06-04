@@ -1,0 +1,13 @@
+<!-- 存放照片  -->
+<view class="content_button">
+    <view class="miaozhun">
+        <image mode='widthFix' src="../../images/瞄准镜.png"></image>
+    </view>
+    <view class="content_button_panel">
+        <image bindtap='buttonclick' src="../../images/选图.png" background-size="contain"></image>
+    </view>
+    <view class="loading" hidden='{{loading_hidden}}'>loading……</view>
+    <!-- <view hidden='{{photo_img_hidden}}' class="content_photo">
+    <image class="photo" mode='widthFix' src="{{photo_img!=''?photo_img:'images/photo.jpeg'}}" background-size="100%"></image>
+    </view> -->
+</view>

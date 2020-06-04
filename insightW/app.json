@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/camera/camera",
+    "pages/footprint/footprint",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffb400",
+    "navigationBarTitleText": "Insight",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "text": "城市名片",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/album.png",
+        "selectedIconPath": "images/album-active.png"
+      },
+      {
+        "text": "拍照识景",
+        "pagePath": "pages/camera/camera",
+        "iconPath": "images/camera.png",
+        "selectedIconPath": "images//camera.png"
+      },
+      {
+        "text": "历史足迹",
+        "pagePath": "pages/footprint/footprint",
+        "iconPath": "images/clock.png",
+        "selectedIconPath": "images/clock-active.png"
+      }
+    ]
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.5",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "style": "v2"
+}

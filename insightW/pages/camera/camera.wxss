@@ -1,0 +1,24 @@
+/* pages/camera/camera.wxss */
+
+.photo {
+  display:flex;                   
+  justify-content: center; 
+  width: 100%;
+}
+
+.miaozhun {
+  display:flex;                   
+  justify-content: center; 
+  width: 100%;
+}
+
+.content_button_panel{
+  height: 150px;
+  display:flex;                
+  justify-content: center; 
+}
+
+.loading{
+  display:flex;                   
+  justify-content: center; 
+}

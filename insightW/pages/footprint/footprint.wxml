@@ -1,0 +1,34 @@
+<view class="history-container">
+  <view class="play-title">
+      <text class="history-record">历史足迹</text>
+      <text bindtap="changeState" class="edit">{{state}}</text>
+  </view>
+  <view class="for" >
+    <block wx:for="{{datas.content_list}}" wx:key="title">
+      <view bindtap="routeTo" class="history-item">
+        <view class="box">
+          <image class="history-list-image" src="{{item.img}}"></image>
+        </view>
+          <view class="histroy-play-detail-text">
+              <text class="history-list-title">{{item.title}}</text>
+              <text class="history-date" style="opacity: 0.5">{{item.date}}</text>
+          </view>
+          <image catchtap="choice" data-index='{{index}}' class="history-list-icon" wx:if="{{datas.isEdit}}" src="{{item.checked? datas.checked:datas.unchecked}}"></image>
+      </view>
+    </block>
+  </view>
+
+  <view class="history-bottom" wx:if="{{datas.isEdit}}">
+
+      <view class="history-action-left" bindtap="deleteSelectedHistory">
+        <image src="{{datas.delete_icn}}"></image>
+        <text>删除</text>
+      </view>
+
+      <!-- <view class="history-action-right" bindtap="selectAll">
+        <image src="{{datas.selectall_icn}}"></image>
+        <text>全选</text>
+      </view> -->
+
+    </view>
+</view>
