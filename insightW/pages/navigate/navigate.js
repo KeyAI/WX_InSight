@@ -28,8 +28,8 @@ Page({
     var that = this;
     var myAmapFun = new amapFile.AMapWX({key:'f316ce454c6ea639e8518e1045cbc11e'});
     myAmapFun.getPoiAround({
-      iconPathSelected: '', //如：..­/..­/img/marker_checked.png
-      iconPath: '', //如：..­/..­/img/marker.png
+      iconPathSelected: '../../images/marker_checked.png', //如：..­/..­/img/marker_checked.png
+      iconPath: '../../images/marker.png', //如：..­/..­/img/marker.png
       success: function(data){
         markersData = data.markers;
         that.setData({
@@ -64,9 +64,9 @@ Page({
     var markers = [];
     for(var j = 0; j < data.length; j++){
       if(j==i){
-        data[j].iconPath = ""; //如：..­/..­/img/marker_checked.png
+        data[j].iconPath = "../../images/marker_checked.png"; //如：..­/..­/img/marker_checked.png
       }else{
-        data[j].iconPath = ""; //如：..­/..­/img/marker.png
+        data[j].iconPath = "../../images/marker.png"; //如：..­/..­/img/marker.png
       }
       markers.push(data[j]);
     }

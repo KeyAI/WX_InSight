@@ -14,6 +14,16 @@ Page({
     ]
   },
 
+  navclick:function(){
+    wx.navigateTo({
+      url: '../driveRoute/driveRoute',
+    })
+  },
+  naviToWeather: function (e) {
+    wx.navigateTo({
+      url: '../weather/weather'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -84,4 +94,3 @@ Page({
     })
   }
 })
-

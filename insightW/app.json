@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/camera/camera",
     "pages/footprint/footprint",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/navigate/navigate",
+    "pages/driveRoute/driveRoute",
+    "pages/weather/weather",
+    "pages/driveRoute_detail/driveRoute_detail"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
