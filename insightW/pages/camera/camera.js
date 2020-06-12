@@ -8,7 +8,7 @@ Page({
     photo_img_hidden: true, //展示照片的view是否隐藏
     photo_img:'', //存放照片路径的
     baiduToken: null,
-    landmark:{}, //地标识别结果 
+    landmark: '', //地标识别结果 
   },
 
   /**
